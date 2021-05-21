@@ -60,7 +60,7 @@ COMPILER=clang
 INCREMENTAL=0
 
 # Push ZIP to Telegram. 1 is YES | 0 is NO(default)
-PTTG=1
+PTTG=0
 	if [ $PTTG = 1 ]
 	then
 		# Set Telegram Chat ID
@@ -68,11 +68,11 @@ PTTG=1
 	fi
 
 # Generate a full DEFCONFIG prior building. 1 is YES | 0 is NO(default)
-DEF_REG=0
+DEF_REG=1
 
 # Build dtbo.img (select this only if your source has support to building dtbo.img)
 # 1 is YES | 0 is NO(default)
-BUILD_DTBO=0
+BUILD_DTBO=1
 
 # Silence the compilation
 # 1 is YES(default) | 0 is NO
